@@ -1,0 +1,116 @@
+ <section id="main">
+
+   <div className="">
+
+      <div className="col-md-3">
+
+
+         <div className="row">
+            <div className="col-xs-12 col-sm-12">
+               <div className="panel panel-default">
+                  <div className="panel-heading c-list">
+                     <span className="title">Candidates</span>
+                     <ul className="pull-right c-controls">
+                        <li><a href="#cant-do-all-the-work-for-you" data-toggle="tooltip" data-placement="top" title="Add Contact"><i className="glyphicon glyphicon-plus"></i></a></li>
+                        <li><a href="#" id="c1" className="hide-search"  data-command="toggle-search"  onClick={this.toggleX.bind(this,'c1','cx1')} data-toggle="tooltip" data-placement="top" title="Toggle Search"><i className="fa fa-search"></i></a></li>
+                     </ul>
+                  </div>
+
+                  <div className="row" id="inpSt">
+                     <div className="col-xs-12">
+                        <div className="input-group c-search" id="cx1">
+                           <input type="text" className="form-control" id="contact-list-search"/>
+                           <span className="input-group-btn">
+                              <button className="btn btn-default" type="button"><span className="glyphicon glyphicon-search text-muted"></span></button>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+                  <ul  className="list-group" id="contact-list">
+                     <MyList listData = {this.props.Data}/>
+                  </ul>
+
+                  
+               </div>
+            </div>
+         </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+      <div className="col-md-6">
+         <div className="row">
+            <div className="col-md-6">
+               <div className="drop-zone" id="drop-zone-can">
+                  Drag and Drop Candidates
+               </div>
+            </div>
+            <div className="col-md-6">
+               <div className="drop-zone" id="drop-zone-int">
+                  Drag and Drop Interviewers
+               </div>
+            </div>
+         </div>
+         <ComButton/>
+
+         <div className="row"></div>
+
+
+
+      </div>
+
+
+      <div className="col-md-3">
+
+         <div className="row">
+            <div className="col-xs-12 col-md-12">
+               <div className="panel panel-default">
+                  <div className="panel-heading c-list">
+                     <span className="title">Interviewers</span>
+                     <ul className="pull-right c-controls">
+                        <li><a href="#cant-do-all-the-work-for-you" data-toggle="tooltip" data-placement="top" title="Add Contact"><i className="glyphicon glyphicon-plus"></i></a></li>
+                        <li><a href="#" id="c2" className="hide-search"  data-command="toggle-search" onClick={this.toggleX.bind(this,'c2','cx2')} data-toggle="tooltip" data-placement="top" title="Toggle Search"><i className="fa fa-search"></i></a></li>
+                     </ul>
+                  </div>
+
+                  <div className="row" id="inpSt">
+                     <div className="col-xs-12">
+                        <div className="input-group c-search" id="cx2">
+                           <input type="text" className="form-control" id="contact-list-search2"/>
+                           <span className="input-group-btn">
+                              <button className="btn btn-default" type="button"><span className="glyphicon glyphicon-search text-muted"></span></button>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <ul className="list-group" id="contact-list2">
+                     <MyList listData={this.props.Data2}/>
+                     
+
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+
+
+
+
+
+      </div>
+
+   </div>
+
+
+
+</section>

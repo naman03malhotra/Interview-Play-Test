@@ -1,0 +1,20 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "Interview Assign App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "mongoose": "*",
+    "nodemon": "^1.11.0"
+  },
+   "optionalDependencies": {
+    "fsevents": "*"
+  },
+  "author": "Naman",
+  "license": "ISC"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify assets/js/app.js -t [ babelify --presets [ react ] ] -o builds/bundle.js",
+    "watch": "watchify assets/js/app.js -t [ babelify --presets [ react ] ] -o builds/bundle.js",
+    "uglify": "uglifyjs builds/bundle.js > builds/bundle.min.js",
+    "buildx": "npm run build && npm run uglify && npm run watch"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "nprogress": "^0.2.0",
+    "react-dnd": "^2.2.3",
+    "react-dnd-html5-backend": "^2.2.3",
+    "react-dragula": "^1.1.17",
+    "uglify-js": "^2.7.5"
+  },
+  "author": "Naman",
+  "license": "ISC"
+}
